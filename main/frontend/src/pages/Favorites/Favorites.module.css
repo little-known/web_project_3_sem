@@ -1,0 +1,41 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 18px;
+  padding: 48px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .gamesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .container {
+    padding: 16px 12px;
+  }
+}

@@ -1,0 +1,161 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 32px auto;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: opacity 0.3s;
+}
+
+.image:hover {
+  opacity: 0.9;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.navButton:first-of-type {
+  left: 16px;
+}
+
+.navButton:last-of-type {
+  right: 16px;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fullscreenImage {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  cursor: default;
+}
+
+.closeButton {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  z-index: 10000;
+}
+
+.closeButton:hover {
+  opacity: 0.7;
+}
+
+.fullscreenNavButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 28px;
+  transition: background-color 0.2s;
+  z-index: 10000;
+}
+
+.fullscreenNavButton:first-of-type {
+  left: 24px;
+}
+
+.fullscreenNavButton:last-of-type {
+  right: 24px;
+}
+
+.fullscreenNavButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .navButton {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .navButton:first-of-type {
+    left: 8px;
+  }
+
+  .navButton:last-of-type {
+    right: 8px;
+  }
+
+  .fullscreenNavButton {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .fullscreenNavButton:first-of-type {
+    left: 16px;
+  }
+
+  .fullscreenNavButton:last-of-type {
+    right: 16px;
+  }
+
+  .closeButton {
+    top: 16px;
+    right: 16px;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}

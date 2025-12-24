@@ -1,0 +1,56 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue Condensed";
+}
+
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.noGames {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 18px;
+  padding: 48px;
+}
+
+.loading {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 18px;
+  padding: 48px;
+}
+
+.error {
+  text-align: center;
+  color: #ef4444;
+  font-size: 18px;
+  padding: 48px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .gamesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .container {
+    padding: 16px 12px;
+  }
+}
